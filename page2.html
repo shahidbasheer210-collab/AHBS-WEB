@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT AHBS INTERNATIONAL</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-two">
+
+    <div class="container">
+
+        <div class="nav-shell">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+                <span class="nav-toggle__label">Menu</span>
+                <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+            <nav class="page-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html">HOME</a>
+                <a href="page2.html" aria-current="page">ABOUT US</a>
+                <a href="page3.html">SERVICES</a>
+                <a href="page5.html">INDUSTRIES</a>
+                <a href="page6.html">PROJECT EXECUTION</a>
+                <a href="page7.html">CONTACT</a>
+            </nav>
+        </div>
+        
+        <!-- Main Page Title -->
+        <header class="about-heading">
+            <p class="title-kicker">COMPANY PROFILE / 2026</p>
+            <h1 class="main-page-title">ABOUT <span>AHBS INTERNATIONAL</span></h1>
+        </header>
+
+        <!-- Who We Are -->
+        <section class="content-block">
+            <h2 class="sub-heading">WHO WE ARE</h2>
+            <p class="text-paragraph">
+                AHBS International is a professional industrial engineering and contracting firm providing practical, reliable and quality-focused solutions to the industrial sector in Pakistan. We work with industrial facilities that require dependable engineering services, professional project execution and attention to safety, quality and delivery schedules.
+            </p>
+            <p class="text-paragraph">
+                Our approach combines engineering knowledge, skilled manpower, organized project management and disciplined execution to deliver solutions that meet the operational requirements of modern industrial facilities. From individual engineering works to complete turnkey assignments, AHBS International aims to provide clients with a single, dependable engineering partner.
+            </p>
+        </section>
+
+        <!-- Our Approach -->
+        <section class="content-block">
+            <h2 class="sub-heading">OUR APPROACH</h2>
+            <p class="text-paragraph">
+                Every industrial project has different requirements. We focus on understanding the client's needs before developing and executing the most suitable engineering solution.
+            </p>
+
+            <!-- 3 Columns Box (Precision, Safety, Quality) -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>PRECISION</h3>
+                    <p>Attention to engineering details, accurate fabrication and professional installation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>SAFETY</h3>
+                    <p>Safety-conscious working practices throughout fabrication, installation and project execution.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>QUALITY</h3>
+                    <p>Commitment to reliable materials, workmanship and quality-focused project delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission -->
+        <section class="content-block">
+            <h2 class="sub-heading">OUR MISSION</h2>
+            <p class="text-paragraph">
+                To provide dependable industrial engineering and contracting solutions with uncompromising attention to quality, safety, efficiency and timely delivery.
+            </p>
+        </section>
+
+        <!-- Our Vision -->
+        <section class="content-block">
+            <h2 class="sub-heading">OUR VISION</h2>
+            <p class="text-paragraph">
+                To become a trusted industrial engineering solutions partner in Pakistan, recognized for professional execution, technical capability, reliability and customer satisfaction.
+            </p>
+        </section>
+
+        <!-- Our Values -->
+        <section class="content-block">
+            <h2 class="sub-heading">OUR VALUES</h2>
+            <ul class="values-list">
+                <li><strong>Integrity</strong> — Professional and transparent dealings.</li>
+                <li><strong>Quality</strong> — Reliable engineering solutions.</li>
+                <li><strong>Safety</strong> — Safe working practices at project sites.</li>
+                <li><strong>Commitment</strong> — Responsibility for work and project requirements.</li>
+                <li><strong>Professionalism</strong> — Disciplined engineering and project execution standards.</li>
+            </ul>
+        </section>
+
+        <!-- Image Section -->
+        <div class="image-container">
+        <img src="factory.jpg" alt="Industrial Engineering Solutions" class="industrial-img" loading="lazy" decoding="async">
+        </div>
+
+        <footer class="site-footer">
+            <div class="site-footer__top">
+                <div class="site-footer__brand">
+                    <img src="AHBS-Logo.png" alt="AHBS International logo" class="footer-logo">
+                    <div>
+                        <h3>AHBS INTERNATIONAL</h3>
+                        <p>Industrial Engineering Solutions & Services</p>
+                    </div>
+                </div>
+                <div class="site-footer__links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html#about">About</a>
+                    <a href="page3.html">Services</a>
+                    <a href="index.html#projects">Our Projects</a>
+                    <a href="page7.html">Contact</a>
+                </div>
+                <div class="site-footer__contact">
+                    <h4>Contact</h4>
+                    <a href="https://wa.me/923150270508">+92 315 0270508</a>
+                    <a href="mailto:ahbsinternational@gmail.com">ahbsinternational@gmail.com</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=C-19%2C%20Block%20C%2C%20Sector%2010%2C%20Bagh-e-Korangi%2C%20Karachi">C-19, Block C, Sector 10, Bagh-e-Korangi, Karachi</a>
+                </div>
+            </div>
+            <div class="site-footer__bottom">© 2026 AHBS International. All rights reserved.</div>
+        </footer>
+
+    </div>
+
+    <script>
+        const pageNavigation = document.querySelector('.page-navigation');
+        const navLinks = Array.from(document.querySelectorAll('.page-navigation a'));
+
+        const setActiveNav = (activeLink) => {
+            navLinks.forEach((link) => {
+                const isActive = link === activeLink;
+                link.classList.toggle('active', isActive);
+                if (isActive) {
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
+        };
+
+        const activePageLink = navLinks.find((link) => link.getAttribute('aria-current') === 'page') || navLinks[0];
+        if (activePageLink) {
+            setActiveNav(activePageLink);
+        }
+
+        window.addEventListener('scroll', () => {
+            pageNavigation.classList.toggle('is-scrolled', window.scrollY > 24);
+            if (activePageLink) {
+                setActiveNav(activePageLink);
+            }
+        }, { passive: true });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
